@@ -16,7 +16,13 @@ function App() {
   return (
     <div>
       {questions.map((question) => (
-        <h1>{question.question}</h1>
+        <div>
+          <h1>{question.question}</h1>
+          <h2>{question.correct_answer}</h2>
+          {question.incorrect_answers.map((incorrectAnswer) => (
+            <h2>{incorrectAnswer}</h2>
+          ))}
+        </div>
       ))}
     </div>
   );
