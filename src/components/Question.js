@@ -65,7 +65,7 @@ function Question({ question }) {
                   setResult("✅");
                   console.log("correct");
                 } else {
-                  setResult("🟥");
+                  setResult("🟥 Correct Answer: " + question.correct_answer);
                 }
               }}
             >
